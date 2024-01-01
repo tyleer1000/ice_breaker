@@ -1,1 +1,1 @@
-print('el')
+print("el")
