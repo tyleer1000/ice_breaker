@@ -1,4 +1,3 @@
 # Ice Breaker
 
-print('el")
-
+Intro to Langchain course
