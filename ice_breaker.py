@@ -13,7 +13,6 @@ Musk has expressed views that have made him a polarizing figure.[7][8][9] He has
 """
 
 
-
 if __name__ == "__main__":
     print("Hello LangChain")
 
@@ -24,11 +23,11 @@ if __name__ == "__main__":
     """
 
     summary_prompt_template = PromptTemplate(
-        input_variables=["information"], template=summary_template)
+        input_variables=["information"], template=summary_template
+    )
 
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
 
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
 
     print(chain.run(information=information))
-
